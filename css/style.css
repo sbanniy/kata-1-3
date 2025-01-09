@@ -371,7 +371,7 @@ body {
 
 	.scroll-menu {
 		flex-wrap: wrap;
-		overflow: auto;
+		overflow: hidden;
 	}
 
 	.scroll-menu__fade {
