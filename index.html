@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Title</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="menu">
+				<a class="menu__item menu__item--menu" href="#">
+					<div class="menu__icon">
+						<img src="svg/burger.svg" alt="меню">
+					</div>
+				</a>
+				<div class="menu__divider"></div>
+				<div class="logo menu__logo">
+					<img src="svg/logo.svg" alt="Логотип CPS">
+				</div>
+				<a class="menu__item menu__item--call" href="#">
+					<div class="menu__icon">
+						<img src="svg/call.svg" alt="меню">
+					</div>
+				</a>
+				<a class="menu__item menu__item--chat" href="#">
+					<div class="menu__icon">
+						<img src="svg/chat.svg" alt="меню">
+					</div>
+				</a>
+				<a class="menu__item menu__item--profile" href="#">
+					<div class="menu__icon">
+						<img src="svg/profile.svg" alt="меню">
+					</div>
+				</a>
+				<div class="menu__divider"></div>
+				<a class="menu__item menu__item--request" href="#">
+					<div class="menu__caption">Оставить заявку</div>
+					<div class="menu__icon">
+						<img src="svg/repair.svg" alt="Оставить заявку на ремонт">
+					</div>
+				</a>
+				<a class="menu__item menu-item--check" href="#">
+					<div class="menu__caption">Статус ремонта</div>
+					<div class="menu__icon">
+						<img src="svg/checkstatus.svg" alt="Проверить статус ремонта">
+					</div>
+				</a>
+			</nav>
+
+		</header>
+		<main class="main">
+			<div><!--!заголовок-->
+				<h1 class="title">
+					Услуги и сервисы
+				</h1>
+			</div>
+			<nav class="scroll-menu"><!--!секция с кнопками, скрол на мобилке-->
+				<button class="scroll-menu__item scroll-menu__item--active">
+					Ремонтируемые бренды
+				</button>
+				<button class="scroll-menu__item menu__item">
+					Ремонтируемые устройства
+				</button>
+				<button class="scroll-menu__item menu__item">
+					Цены на услуги
+				</button>
+				<button class="scroll-menu__item menu__item">
+					Специальные цены
+				</button>
+				<button class="scroll-menu__item menu__item">
+					Адреса сервисных центров
+				</button>
+				<button class="scroll-menu__item menu__item">
+					Специальные цены
+				</button>
+				<button class="scroll-menu__item menu__item">
+					Отзывы
+				</button>
+				<!--!прозрачный блок на правой стороне конпок-->
+				<div class="scroll-menu__fade"></div>
+			</nav>
+
+			<section class="content"><!--!секция с основным контентом-->
+				<article class="content__article"><!--!секция текстом-->
+					<div class="content__text"><!--!непосредственно текст-->
+						<p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+							отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+						<p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+							количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+							очередь, советуют нас родным и близким.</p>
+					</div>
+					<div class="content__expand"><!--!кнопка "читать дальше"-->
+						<button class="content__expand-button">
+							Читать далее
+						</button>
+					</div>
+				</article>
+				<aside class="content__aside"><!--!секция с картинкой-->
+					<img class="content__photo" src="png/photo1.png" alt="На фото график работы CPS">
+				</aside>
+
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>
