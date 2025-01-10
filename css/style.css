@@ -78,6 +78,13 @@ body {
 .menu__item {
 	display: flex;
 	align-items: center;
+	border: 2px solid transparent;
+	border-radius: 22px;
+}
+
+.menu__item:hover {
+	border-color: #7e7e82;
+	background-color: #eaeaea;
 }
 
 .menu__logo {
@@ -98,7 +105,7 @@ body {
 	width: 2px;
 	height: 32px;
 	background-color: #eaeaea;
-	margin: 0 3px;
+	margin-left: auto;
 }
 
 .menu__divider:nth-child(2) {
@@ -146,11 +153,11 @@ body {
 
 .scroll-menu__item {
 	height: 40px;
-
-	border: none;
+	border: 2px solid transparent;
 	border-radius: 6px;
 	background-color: inherit;
-	padding: 0 19px;
+	padding-left: 13px;
+	padding-right: 13px;
 
 	color: #7e7e82;
 	font-weight: 500;
@@ -161,10 +168,21 @@ body {
 	cursor: pointer;
 }
 
+.scroll-menu__item:hover {
+	border-color: #7e7e82;
+	background-color: #eaeaea;
+	color: #1b1c21;
+}
+
 .scroll-menu__item--active {
-	padding: 0 15px;
+	padding-left: 0 19px;
 	border: 2px solid #b8ffec;
 	background-color: #ffffff;
+}
+
+.scroll-menu__item--active:hover {
+	border-color: #eaeaea;
+	color: #1b1c21;
 }
 
 .scroll-menu__fade {
@@ -193,17 +211,28 @@ body {
 	overflow: hidden;
 }
 
+.content__text p {
+	margin: 0;
+	display: none;
+}
+
+.content__text p:first-child {
+	display: block;
+}
+
 .content__expand {
-	margin: -1px 0 18px 2px;
+	height: 56px;
+	padding-top: 18px;
 }
 
 .content__expand-button {
-	border: none;
+	border: 2px solid transparent;
+	border-radius: 6px;
 	background: none;
 	font-size: 16px;
+	line-height: 16px;
 	font-weight: 500;
 	letter-spacing: -0.1px;
-
 	cursor: pointer;
 }
 
@@ -211,26 +240,23 @@ body {
 	content: '';
 	display: inline-block;
 	width: 10px;
-	height: 10px;
+	height: 16px;
 	background: url(../svg/expand.svg) no-repeat;
-	padding-right: 10px;
+	background-position: bottom;
+	padding-right: 12px;
 }
 
+.content__expand-button:hover {
+	border-color: #7e7e82;
+	background-color: #eaeaea;
+}
 
 .content__photo {
 	width: 100%;
 	height: auto;
 }
 
-.content__text p {
-	margin-top: 0;
-	margin-bottom: 18px;
-	display: none;
-}
 
-.content__text p:first-child {
-	display: block;
-}
 
 /*! ширина <=768px ========================================================*/
 @media (min-width:768px) {
@@ -240,6 +266,10 @@ body {
 
 	.menu {
 		margin: 0 24px;
+	}
+
+	.menu__divider {
+		margin-left: 3px;
 	}
 
 	.menu__divider:nth-child(2) {
@@ -286,21 +316,19 @@ body {
 		line-height: 20px;
 	}
 
-	.content__expand {
-		flex-basis: 32px;
-		margin: 8px 0 16px 3px;
-	}
-
 	.content__aside {
 		width: 50%;
 	}
 
 	.content__photo {
+		height: 207px;
+		width: auto;
 		border-radius: 6px;
 	}
 
 	.content__text p {
 		display: block;
+		margin-bottom: 19px;
 	}
 }
 
@@ -322,11 +350,10 @@ body {
 	.menu {
 		height: auto;
 		justify-content: flex-end;
-		gap: 40px;
+		gap: 34px;
 		position: relative;
 		top: 42px;
-
-
+		margin-right: 31px;
 	}
 
 	.menu__item--menu,
@@ -368,14 +395,17 @@ body {
 
 	.content {
 		margin-left: 32px;
+		height: 307px;
+	}
+
+	.content__text p:last-child {
+		margin-bottom: 0;
 	}
 
 	.content__photo {
-		width: 100%;
+		height: 307px;
 	}
 
-	.content__expand {
-		margin-top: 30px;
-	}
+
 
 }
