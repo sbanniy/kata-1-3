@@ -100,9 +100,12 @@
 					</div>
 				</article>
 				<aside class="content__aside"><!--!секция с картинкой-->
-					<img class="content__photo" src="png/photo1.png" alt="На фото график работы CPS">
+					<picture>
+						<source srcset="png/photo1120.png" media="(min-width: 1120px)" />
+						<source srcset="png/photo768.png" media="(min-width: 768px)" />
+						<img class="content__photo" src="png/photo320.png" alt="На фото график работы CPS">
+					</picture>
 				</aside>
-
 			</section>
 		</main>
 	</div>

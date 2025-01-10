@@ -131,16 +131,7 @@ body {
 	letter-spacing: -0.6px;
 	margin: 0;
 	padding-left: 16px;
-}
-
-.title::before {
-	content: '';
-	display: block;
-	width: 4px;
-	height: 40px;
-	position: absolute;
-	left: 0;
-	background: url(../svg/highlight.svg);
+	background: url(../svg/highlight.svg) no-repeat;
 }
 
 /*!стили scroll-menu=====================================================*/
@@ -325,18 +316,18 @@ body {
 	}
 
 	.header {
-		height: auto;
+		height: 0;
 		border: none;
 	}
 
 	.menu {
 		height: auto;
-		display: inline-flex;
+		justify-content: flex-end;
 		gap: 40px;
-		position: absolute;
+		position: relative;
 		top: 42px;
-		margin-right: 0;
-		margin-left: 730px;
+		right: 16px;
+
 
 	}
 
