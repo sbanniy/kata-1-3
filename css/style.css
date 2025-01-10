@@ -181,8 +181,9 @@ body {
 }
 
 .scroll-menu__item--active:hover {
-	border-color: #eaeaea;
+	border-color: #7e7e82;
 	color: #1b1c21;
+	background-color: #eaeaea;
 }
 
 .scroll-menu__fade {
